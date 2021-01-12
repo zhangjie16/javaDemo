@@ -5,7 +5,7 @@ public class testClassForName {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
         Class<?> obj =  Class.forName(str,true,loader);
         System.out.println(obj.getClass());
-
+        System.out.println(obj);
         //System.out.println("b="+((classForName)obj).b);
         classForName target = (classForName) obj.newInstance();
         System.out.println("a="+target.a);
